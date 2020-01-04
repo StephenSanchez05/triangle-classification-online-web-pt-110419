@@ -2,10 +2,10 @@ class Triangle
   
   attr_accessor :A, :B, :C, :equilateral, :isosceles, :scalene
   
-  def initialize(A, B, C)
-    :A = A 
-    :B = B
-    :C = C
+  def initialize(lenghtA, lengthB, lengthC)
+    :A = lengthA 
+    :B = lengthB
+    :C = lengthC
   end
   
   def kind
