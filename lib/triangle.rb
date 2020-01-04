@@ -27,7 +27,7 @@ class Triangle
   else
     puts @scalene
   end
-end
+
 
 
 class TriangleError < StandardError
