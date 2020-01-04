@@ -9,7 +9,7 @@ class Triangle
   end
   
   def type
-    
+    if :
 
 class TriangleError < StandardError
   def message
