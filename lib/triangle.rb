@@ -1,3 +1,8 @@
 class Triangle
-  # write code here
+  
+  attr_accessor :lengthA, :lengthB, :lengthC
+  
+  
+  
+  
 end
