@@ -12,6 +12,12 @@ class Triangle
     if :A + :B > :C && :B + :C > :A && :A + :C > :B
       type
     else
+      begin
+      raise TriangleError
+      rescue TriangleError => error
+      puts error.message
+    end
+  end
   
   def type
     if :A = :B && :B = :C
