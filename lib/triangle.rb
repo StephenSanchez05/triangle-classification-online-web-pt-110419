@@ -10,7 +10,7 @@ class Triangle
   
   def kind
     if @lengthA != 0 && @lengthA + @lengthB > @lengthC && @lengthB + @lengthC > @lengthA && @lengthA + @lengthC > @lengthB
-      type
+      puts type
     else
       begin
       raise TriangleError
