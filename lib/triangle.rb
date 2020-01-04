@@ -9,7 +9,9 @@ class Triangle
   end
   
   def kind
-    
+    if :A + :B > :C && :B + :C > :A && :A + :C > :B
+      type
+    else
   
   def type
     if :A = :B && :B = :C
