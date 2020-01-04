@@ -9,7 +9,7 @@ class Triangle
   end
   
   def kind
-    if @lengthA + @lengthB >= @lengthC && @lengthB + @lengthC >= @lengthA && @lengthA + @lengthC >= @lengthB
+    if @lengthA != 0 && @lengthA + @lengthB > @lengthC && @lengthB + @lengthC > @lengthA && @lengthA + @lengthC > @lengthB
       type
     else
       begin
