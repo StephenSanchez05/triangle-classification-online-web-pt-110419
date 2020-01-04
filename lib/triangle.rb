@@ -8,10 +8,17 @@ class Triangle
     :C = C
   end
   
+  def 
+  
   def type
     if :A = :B && :B = :C
       puts :equilateral
-    elsif 
+    elsif :B = :A || :B = :C || :A = :C
+    puts :isosceles
+  else
+    puts :scalene
+  end
+end 
 
 class TriangleError < StandardError
   def message
