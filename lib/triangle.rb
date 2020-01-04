@@ -17,7 +17,7 @@ class Triangle
     end
   end
   
-  def self.answer
+  def answer
     if @lengthA = @lengthB && @lengthB = @lengthC
       puts @equilateral
     elsif @lengthB = @lengthA || @lengthB = @lengthC || @lengthA = @lengthC
