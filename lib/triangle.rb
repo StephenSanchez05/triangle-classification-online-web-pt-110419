@@ -13,4 +13,6 @@ end
 
 class TriangleError < StandardError
   def message
-    ""
+    "The sides you submit must equal a triangle"
+  end
+end
