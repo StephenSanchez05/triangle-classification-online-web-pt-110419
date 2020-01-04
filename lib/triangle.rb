@@ -20,9 +20,8 @@ class Triangle
   end
   
   def answer
-    pass = false
      if @lengthA != 0 && @lengthA + @lengthB > @lengthC && @lengthB + @lengthC > @lengthA && @lengthA + @lengthC > @lengthB
-      pass = true
+      true
     else
       begin
       raise TriangleError
