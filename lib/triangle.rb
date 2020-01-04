@@ -1,6 +1,6 @@
 class Triangle
   
-  attr_accessor :lengthA, :lengthB, :lengthC, :equilateral, :isosceles, :scalene
+  attr_accessor :lengthA, :lengthB, :lengthC,
   
   def initialize(lengthA, lengthB, lengthC)
     @lengthA = lengthA 
@@ -11,11 +11,11 @@ class Triangle
   def kind
     answer
     if @lengthA == @lengthB && @lengthB == @lengthC
-      puts @equilateral
+     :equilateral
     elsif @lengthB == @lengthA || @lengthB == @lengthC || @lengthA == @lengthC
-    puts @isosceles
+    :isosceles
     else
-    puts @scalene
+    :scalene
     end
   end
   
