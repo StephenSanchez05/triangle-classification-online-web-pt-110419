@@ -10,14 +10,14 @@ class Triangle
   
   def kind
     if @lengthA != 0 && @lengthA + @lengthB > @lengthC && @lengthB + @lengthC > @lengthA && @lengthA + @lengthC > @lengthB
-      answer
+      self.answer
     else
       begin
       raise TriangleError
     end
   end
   
-  def answer
+  def self.answer
     if @lengthA = @lengthB && @lengthB = @lengthC
       puts @equilateral
     elsif @lengthB = @lengthA || @lengthB = @lengthC || @lengthA = @lengthC
