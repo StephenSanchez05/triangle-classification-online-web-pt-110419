@@ -24,11 +24,11 @@ class Triangle
       puts @equilateral
     elsif @lengthB = @lengthA || @lengthB = @lengthC || @lengthA = @lengthC
     puts @isosceles
-  else
+    else
     puts @scalene
+    end
   end
-
-
+end
 
 class TriangleError < StandardError
   def message
