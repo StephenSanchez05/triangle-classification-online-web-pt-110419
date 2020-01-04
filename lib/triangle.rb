@@ -9,21 +9,22 @@ class Triangle
   end
   
   def kind
-    if @lengthA != 0 && @lengthA + @lengthB > @lengthC && @lengthB + @lengthC > @lengthA && @lengthA + @lengthC > @lengthB
-      answer
-    else
-      begin
-      raise TriangleError
-    end
-  end
-  
-  def answer
+    answer
     if @lengthA == @lengthB && @lengthB == @lengthC
       puts @equilateral
     elsif @lengthB == @lengthA || @lengthB == @lengthC || @lengthA == @lengthC
     puts @isosceles
     else
     puts @scalene
+    end
+  end
+  
+  def answer
+     if @lengthA != 0 && @lengthA + @lengthB > @lengthC && @lengthB + @lengthC > @lengthA && @lengthA + @lengthC > @lengthB
+      answer
+    else
+      begin
+      raise TriangleError
     end
   end
 end
