@@ -8,8 +8,6 @@ class Triangle
     :C = C
   end
   
-  
-end
 
 class TriangleError < StandardError
   def message
