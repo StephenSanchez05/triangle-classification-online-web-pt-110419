@@ -1,37 +1,32 @@
+  
 class Triangle
-  
-  attr_accessor :lengthA, :lengthB, :lengthC,
-  
-  def initialize(lengthA, lengthB, lengthC)
-    @lengthA = lengthA 
-    @lengthB = lengthB
-    @lengthC = lengthC
+  attr_reader :a, :b, :c
+  def initialize(a, b, c)
+    @a = a
+    @b = b
+    @c = c
   end
-  
-  def kind
-    answer
-    if @lengthA == @lengthB && @lengthB == @lengthC
-     :equilateral
-    elsif @lengthB == @lengthA || @lengthB == @lengthC || @lengthA == @lengthC
-    :isosceles
-    else
-    :scalene
-    end
-  end
-  
-  def answer
-     if @lengthA != 0 && @lengthA + @lengthB > @lengthC && @lengthB + @lengthC > @lengthA && @lengthA + @lengthC > @lengthB
-      true
-    else
-      begin
-      raise TriangleError
-    end
-  end
-end
 
-class TriangleError < StandardError
-  def message
-    "The sides you submit must equal a triangle"
+  def kind
+    validate_triangle
+    if a == b && b == c
+      :equilateral
+    elsif a == b || b == c || a == c
+      :isosceles
+    else
+      :scalene
+    end
   end
-end
+
+  def validate_triangle
+    real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
+    [a, b, c].each do |side|
+      real_triangle << false if side <= 0 
+    raise TriangleError if real_triangle.include?(false)
+    end
+  end
+
+  class TriangleError < StandardError
+  end
+
 end
