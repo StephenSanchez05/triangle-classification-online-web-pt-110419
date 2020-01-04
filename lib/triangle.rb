@@ -3,13 +3,13 @@ class Triangle
   attr_accessor :lengthA, :lengthB, :lengthC, :equilateral, :isosceles, :scalene
   
   def initialize(lenghtA, lengthB, lengthC)
-    :lengthA = lengthA 
-    :lengthB = lengthB
-    :lengthC = lengthC
+    @lengthA = lengthA 
+    @lengthB = lengthB
+    @lengthC = lengthC
   end
   
   def kind
-    if :lengthA + :lengthB > :lengthC && :lengthB + :lengthC > :lengthA && :lengthA + :lengthC > :lengthB
+    if @lengthA + @lengthB > @lengthC && @lengthB + @lengthC > @lengthA && @lengthA + @lengthC > @lengthB
       type
     else
       begin
@@ -20,12 +20,12 @@ class Triangle
   end
   
   def type
-    if :lengthA = :lengthB && :lengthB = :lengthC
-      puts :equilateral
-    elsif :lengthB = :lengthA || :lengthB = :lengthC || :lengthA = :lengthC
-    puts :isosceles
+    if @lengthA = @lengthB && @lengthB = @lengthC
+      puts @equilateral
+    elsif @lengthB = @lengthA || @lengthB = @lengthC || @lengthA = @lengthC
+    puts @isosceles
   else
-    puts :scalene
+    puts @scalene
   end
 end 
 
