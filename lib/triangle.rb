@@ -18,9 +18,9 @@ class Triangle
   end
   
   def answer
-    if @lengthA = @lengthB && @lengthB = @lengthC
+    if @lengthA == @lengthB && @lengthB == @lengthC
       puts @equilateral
-    elsif @lengthB = @lengthA || @lengthB = @lengthC || @lengthA = @lengthC
+    elsif @lengthB == @lengthA || @lengthB == @lengthC || @lengthA == @lengthC
     puts @isosceles
     else
     puts @scalene
