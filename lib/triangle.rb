@@ -10,6 +10,8 @@ class Triangle
   
   def type
     if :A = :B && :B = :C
+      puts :equilateral
+    elsif 
 
 class TriangleError < StandardError
   def message
