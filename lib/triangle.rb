@@ -21,7 +21,7 @@ class Triangle
   
   def answer
      if @lengthA != 0 && @lengthA + @lengthB > @lengthC && @lengthB + @lengthC > @lengthA && @lengthA + @lengthC > @lengthB
-      answer = True
+      answer = TRUE
     else
       begin
       raise TriangleError
