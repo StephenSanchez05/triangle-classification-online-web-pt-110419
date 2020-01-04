@@ -1,6 +1,6 @@
 class Triangle
   
-  attr_accessor :lengthA, :lengthB, :lengthC
+  attr_accessor :A, :B, :C
   
   
   
