@@ -34,3 +34,4 @@ class TriangleError < StandardError
     "The sides you submit must equal a triangle"
   end
 end
+end
