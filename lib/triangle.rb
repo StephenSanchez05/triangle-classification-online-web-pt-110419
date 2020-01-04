@@ -8,7 +8,8 @@ class Triangle
     :C = C
   end
   
-  def 
+  def kind
+    
   
   def type
     if :A = :B && :B = :C
