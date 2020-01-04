@@ -9,7 +9,7 @@ class Triangle
   end
   
   def type
-    if :
+    if :A = :B && :B = :C
 
 class TriangleError < StandardError
   def message
